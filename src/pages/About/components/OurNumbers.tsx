@@ -1,4 +1,5 @@
 import React from "react";
+import CountUp from "react-countup";
 
 const OurNumbers = () => {
   return (
@@ -13,7 +14,7 @@ const OurNumbers = () => {
         <div className="mt-10 sm:mt-4 w-full flex sm:flex-col sm:gap-8 items-center justify-between">
           <div>
             <p className="text-[92px] md:text-[60px] text-greenText font-manrope font-normal leading-[56px] sm:text-center">
-              120m
+              <CountUp start={0} end={120} duration={3} suffix="m" />
             </p>
             <p className="mt-5 sm:mt-2 text-[22px] md:text-[18px] text-lightText2 font-sans font-normal leading-[36px] sm:text-center">
               Cool feature title
@@ -21,7 +22,13 @@ const OurNumbers = () => {
           </div>
           <div>
             <p className="text-[92px] md:text-[60px] text-greenText font-manrope font-normal leading-[56px] sm:text-center">
-              10.000
+              <CountUp
+                start={0}
+                end={10}
+                duration={3}
+                decimal="000"
+                suffix=""
+              />
             </p>
             <p className="mt-5 sm:mt-2 text-[22px] md:text-[18px] text-lightText2 font-sans font-normal leading-[36px] sm:text-center">
               Cool feature title
@@ -29,7 +36,7 @@ const OurNumbers = () => {
           </div>
           <div>
             <p className="text-[92px] md:text-[60px] text-greenText font-manrope font-normal leading-[56px] sm:text-center">
-              240
+              <CountUp start={0} end={240} duration={3} suffix="" />
             </p>
             <p className="mt-5 sm:mt-2 text-[22px] md:text-[18px] text-lightText2 font-sans font-normal leading-[36px] sm:text-center">
               Cool feature title
