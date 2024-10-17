@@ -14,7 +14,7 @@ const OurValues = () => {
             Our Values
           </p>
           <h3 className="mb-0 mt-1 text-lightText text-[46px] md:text-[40px] sm:!text-[32px]  font-manrope font-normal leading-[72px] md:leading-[62px] sm:!leading-[45px]">
-            Things in we believe
+            Things we believe in.
           </h3>
           <p className="mb-0 mt-6 leading-[28px] text-lightText2 text-[20px] md:text-[18px] sm:!text-[16px] font-sans font-normal   max-w-[750px]">
             Conversion angel investor entrepreneur first mover advantage.

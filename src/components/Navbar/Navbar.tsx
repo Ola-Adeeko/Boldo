@@ -55,7 +55,7 @@ const Navbar = () => {
           className="hidden md:flex items-center cursor-pointer text-white text-3xl"
           onClick={toggleMenu}
         >
-          {isOpen ? <IoCloseCircleOutline /> : <RiMenu5Fill />}
+          <RiMenu5Fill />
         </div>
       </div>
 
@@ -64,6 +64,12 @@ const Navbar = () => {
           isOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >
+        <div
+          className="hidden md:flex absolute top-10 right-8 items-center cursor-pointer text-white text-3xl"
+          onClick={toggleMenu}
+        >
+          <IoCloseCircleOutline />
+        </div>
         <ul className="flex flex-col gap-4 text-center">
           <li
             onClick={onClose}
