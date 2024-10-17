@@ -1,5 +1,6 @@
 import React from "react";
 import CountUp from "react-countup";
+import DelayedView from "../../../components/DelayedView";
 
 const OurNumbers = () => {
   return (
@@ -11,37 +12,34 @@ const OurNumbers = () => {
         <h3 className="mb-0 text-lightText text-[46px] md:text-[40px] sm:!text-[32px]  font-manrope font-normal leading-[72px] md:leading-[62px] sm:!leading-[45px] text-center max-w-[820px]">
           Handshake infographic mass market crowdfunding iteration.{" "}
         </h3>
-        <div className="mt-10 sm:mt-4 w-full flex sm:flex-col sm:gap-8 items-center justify-between">
-          <div>
+
+        <div className="mt-10 sm:mt-4 w-full flex sm:flex-col sm:gap-8 items-center justify-between ">
+          <DelayedView delay={200}>
             <p className="text-[92px] md:text-[60px] text-greenText font-manrope font-normal leading-[56px] sm:text-center">
-              <CountUp start={0} end={120} duration={3} suffix="m" />
+              <CountUp start={0} end={120} duration={5} suffix="m" />
             </p>
             <p className="mt-5 sm:mt-2 text-[22px] md:text-[18px] text-lightText2 font-sans font-normal leading-[36px] sm:text-center">
               Cool feature title
             </p>
-          </div>
-          <div>
+          </DelayedView>
+
+          <DelayedView delay={200}>
             <p className="text-[92px] md:text-[60px] text-greenText font-manrope font-normal leading-[56px] sm:text-center">
-              <CountUp
-                start={0}
-                end={10}
-                duration={3}
-                decimal="000"
-                suffix=""
-              />
+              <CountUp start={0} end={10} duration={5} decimals={3} suffix="" />
             </p>
             <p className="mt-5 sm:mt-2 text-[22px] md:text-[18px] text-lightText2 font-sans font-normal leading-[36px] sm:text-center">
               Cool feature title
             </p>
-          </div>
-          <div>
+          </DelayedView>
+
+          <DelayedView delay={200}>
             <p className="text-[92px] md:text-[60px] text-greenText font-manrope font-normal leading-[56px] sm:text-center">
-              <CountUp start={0} end={240} duration={3} suffix="" />
+              <CountUp start={0} end={240} duration={5} suffix="" />
             </p>
             <p className="mt-5 sm:mt-2 text-[22px] md:text-[18px] text-lightText2 font-sans font-normal leading-[36px] sm:text-center">
               Cool feature title
             </p>
-          </div>
+          </DelayedView>
         </div>
       </div>
     </div>

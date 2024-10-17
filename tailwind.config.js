@@ -24,6 +24,19 @@ module.exports = {
         greenText: "var(--greenAccent2)",
         lightText2: "var(--whiteAccent)",
       },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0, transform: "translateY(50px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        fadeIn: "fadeIn 1s ease-in-out",
+      },
+      transitionDelay: {
+        0: "0s",
+        200: "2s",
+      },
     },
   },
   plugins: [],
